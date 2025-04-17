@@ -1,35 +1,51 @@
-# 😸 The Compounded Hacker
+# 😸 The Compound Hacker
 
-- 千亿交易量验证
-- 全球资产建模 
-- 覆盖一年到一秒全交易周期 
-- 十五年全球投资经验 
+- 100 Billion transaction volume validated
+- Global asset modeling since 2010
+- Cover all trading cycles from 1 mili-second year to 1 year
+- Build for long-term compounding
 
 # 🌱 Excellence  = Skill * Breadth * Implementation
 
-- 华尔街和硅谷的双重基因
-- 四次大型系统迭代,千万行代码技术积累
-- AI带来真实战斗力
-- 用系统和概率实现长期主义
+- Millions of lines of code cultivates deep algorithmic knowledge
+- Disciplined scaling follows a battle-hardened methodology 
+- Strike fast.  Speed is your weapon. 
 
 
-# 💞️ 团队
-
+# 💞️ Team
+- Wall Street and Silicon Valley dual-gene
+- 15 years of global investment experience
+- Flat hierarchy where the best ideas win
+- Regular hackathons and innovative learning 
+```
      </>
     ─────  Diversity. Passionate. With taste.
      CODE
+```
 
-
-# 👀 愿景
-从全球 20 个办公室，用20年, 获取年化20% 的绝对收益
+# 👀 Vision
+From global 20 offices, achieve 20% absolute return, for 20 years
 
 
 # 📈 Track Record
 2019-2024: 6 times in 6 years with multi assets
 
-```
-     /\___/\
-    (  o o  )
-    (  =^=  ) 
-     (______)
+
+# 🔍 We're Expanding
+
+We're always looking for exceptional talent in:
+- Quantitative Scientist
+- Mathematical/AI Modeling
+- Low-Latency data Systems
+- DevOps and Infrastructure
+
+
+```text
+     .                        /\_/\       __
+     .  °　    　　•　　  _____( >O< ) <  "I'M IN!!! HACK MODE!!! WOOHOO!!!"
+     .  　★   　*   ====(x         <    /____\
+     ★　   *      °    |          |==(:)  o  |
+     . .　　✯　•　°    .  \_________/    | BEER |
+     ☆    .   ☄   .       VV     V      \_/-\_/
+     .
 ```
