@@ -28,7 +28,30 @@ From global 20 offices, achieve 20% absolute return, for 20 years
 
 
 # 📈 Track Record
-2019-2024: 6 times in 6 years with multi assets
+
+![pnl](./images/pnl.no.crypto.png)
+
+### 2019-2024: 6 times in 6 years with multi assets
+
+| Asset Class | Total Return | High-freq | Short-term | Mid-term | Long-term | Key Characteristics | Sharpe Ratio |
+|------------|--------------|-----------|------------|-----------|------------|-------------------|--------------|
+| A-shares | 82.69% | - | ✅ | ✅ | ✅ | Outperforming SSE (4.5% ann.) | 0.93 |
+| Futures| 316% | ✅ | ✅ | - | - | Stable in volatile markets | 1.01 |
+| US Stocks | 59.15% | - | - | ✅ | ✅ | Global market exposure | 0.66 |
+| Crypto | 1959% | ✅ | ✅ | ✅ | ✅ | High volatility opportunities | 0.97 |
+| Portfolio | 602.27% | ✅ | ✅ | ✅ | ✅ | Multi-asset diversification | 0.97 |
+
+
+- **Skill** (Single Asset Depth):
+    - Each Single Asset: **Profitable**
+    - Each Single Asset: Covers multiple **cycles**
+    - Each Single Asset: Covers multiple **models**
+- **Breadth**:
+    - Coverage of all major assets: A-shares, Chinese futures, international futures, cryptocurrency, US stocks
+    - Proliferation of trading methodology across markets
+- **Implementation**:
+    - Unified investment methodology: **Multi-cycle nesting** + **Multi-asset rotation**
+    - Standardized industrial process: covering **28 core procedures**, ensuring **end-to-end model deployment** from conception to production
 
 
 # 🔍 We're Expanding
