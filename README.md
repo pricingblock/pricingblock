@@ -24,8 +24,11 @@
 ```
 
 # 👀 Vision
-From global 20 offices, achieve 20% absolute return, for 20 years
-
+### From global 20 offices, achieve 20% absolute return, for 20 years
+- Beijing, Shanghai, Hong Kong, Singapore, Tokyo
+- New York, Palo Alto, 
+- London, Frankfurt, Sydney, 
+- Dubai, Mumbai, Ho Chi Ming, Rwanda and Etc.
 
 # 📈 Track Record
 
