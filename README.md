@@ -1,15 +1,14 @@
-# 😸 The Compound Hacker
-
-- 100 Billion transaction volume validated
-- Global asset modeling since 2010
+# 😸 "The Compound Hacker"
 - Cover all trading cycles from 1 mili-second year to 1 year
-- Build for long-term compounding
+- 100 Billion transaction volume validated since 2010
+- Profitable in each major asset : US stocks, A share stocks, Global futures, Cryptos and etc
+- Compound Hacker generates long term compound returns: 600% in 6 years
 
 # 🌱 Excellence  = Skill * Breadth * Implementation
 
-- Millions of lines of code cultivates deep algorithmic knowledge
-- Disciplined scaling follows a battle-hardened methodology 
-- Strike fast.  Speed is your weapon. 
+- 10 Millions of lines of code cultivates deep algorithmic knowledge
+- **28 core procedures**, ensuring **end-to-end model deployment** from conception to production
+- Nanosecond event driven.  Speed is your weapon. 
 
 
 # 💞️ Team
@@ -38,18 +37,14 @@
 ![pnl](./images/pnl.no.crypto.png)
 
 
-### The above performance are empowered by our proprietary platform:
-- Unified investment methodology: **Multi-cycle nesting** + **Multi-asset rotation**
-- Unified industrial process: covering **28 core procedures**, ensuring **end-to-end model deployment** from conception to production
-
-
-| Asset Class | Total Return | High-freq | Short-term | Mid-term | Long-term | Key Characteristics | Sharpe Ratio |
-|------------|--------------|-----------|------------|-----------|------------|-------------------|--------------|
-| A-shares | 82.69% | - | ✅ | ✅ | ✅ | Outperforming SSE (4.5% ann.) | 0.93 |
-| Futures| 316% | ✅ | ✅ | - | - | Stable in volatile markets | 1.01 |
-| US Stocks | 59.15% | - | - | ✅ | ✅ | Global market exposure | 0.66 |
-| Crypto | 1959% | ✅ | ✅ | ✅ | ✅ | High volatility opportunities | 0.97 |
-| Portfolio | 602.27% | ✅ | ✅ | ✅ | ✅ | Multi-asset diversification | 0.97 |
+### Deliever value in 4 trading cycles
+| Asset Class | Total Rtn | High-freq | Short-term | Mid-term | Long-term | Sharpe |
+|------------|--------------|-----------|------------|-----------|-----------|--------------|
+| A-shares | 82.69% | - | ✅ | ✅ | ✅ | 0.93 |
+| Futures| 316% | ✅ | ✅ | - | - | 1.01 |
+| US Stocks | 59.15% | - | - | ✅ | ✅ | 0.66 |
+| Crypto | 1959% | ✅ | ✅ | ✅ | ✅ | 0.97 |
+| Portfolio | 602.27% | ✅ | ✅ | ✅ | ✅ | 0.97 |
 
 
 # 🔍 We're Expanding
