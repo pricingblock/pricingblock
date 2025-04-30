@@ -34,7 +34,7 @@
 ###  6 times in 6 years with multi assets， profitable in all assets
 
 
-![pnl](./images/pnl.no.crypto.png)
+![pnl](./images/pnl.all.png)
 
 
 ### Deliever value in 4 trading cycles
