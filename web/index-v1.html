@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pricing Block - The Compound Hacker</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #000;
+            --secondary-color: #333;
+            --accent-color: #0066cc;
+            --text-color: #333;
+            --light-text: #fff;
+            --bg-color: #fff;
+            --section-bg: #f7f7f7;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 15px;
+            margin-top: -10px;
+        }
+        .logo span {
+            font-size: 16px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light-text);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .hero {
+            background-color: var(--primary-color);
+            background-image: url('./images/pricing.ice.png');
+            background-size: cover;
+            padding: 160px 0 80px;
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(13, 35, 60, 0.4), rgba(13, 35, 60, 0.7));
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 0 auto 20px;
+            color: #e0f2ff;
+            text-shadow: 0 1px 5px rgba(0, 0, 20, 0.5);
+            letter-spacing: 0.5px;
+        }
+
+        .hero-content {
+            line-height: 1.6;
+            font-size: 22px;
+            padding-top: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--section-bg);
+        }
+
+        .section-title {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .section-icon {
+            margin-right: 15px;
+            color: var(--accent-color);
+        }
+
+        .excellence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .excellence-item {
+            background-color: var(--bg-color);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .excellence-item h3 {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .team-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .team-values {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            flex-wrap: nowrap;
+            gap: 30px;
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+
+        .value-item {
+            display: inline-block;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: 700;
+            position: relative;
+            background: linear-gradient(90deg, #0066cc 0%, #4da6ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .vision-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .offices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .office-item {
+            background-color: var(--bg-color);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            display: block;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--section-bg);
+        }
+
+        .expanding-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .roles-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .roles-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .roles-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        #track-record-pnlimg {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+        }
+
+        #track-record-table {
+            max-width: 100%;
+            width: 100%;
+            margin: 30px auto;
+            display: table;
+            table-layout: fixed;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .expanding-section {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+        }
+
+        .expanding-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .expanding-text {
+            flex: 1;
+            padding-right: 50px;
+            position: relative;
+        }
+
+        .expanding-text::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background-color: var(--accent-color);
+        }
+
+        .expanding-text h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .expanding-text p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .expanding-image {
+            flex: 0 0 45%;
+            max-width: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .expanding-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .roles-list {
+            list-style: none;
+            margin-top: 20px;
+            padding-left: 0;
+        }
+
+        .roles-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .roles-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            font-size: 24px;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 992px) {
+            .expanding-container {
+                flex-direction: column;
+            }
+            
+            .expanding-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+                width: 100%;
+            }
+            
+            .expanding-image {
+                width: 80%;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+        }
+
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 100%;
+            overflow-x: auto;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                width: 100%;
+                display: none;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+
+            .hero {
+                padding: 130px 0 60px;
+            }
+
+            .hero h1 {
+                font-size: 25px;
+                white-space: nowrap;
+                margin-bottom: 20px;
+            }
+            
+            .hero-content {
+                padding-top: 30px;
+                line-height: 1.3;
+                font-size: 18px;
+            }
+            
+            .hero p {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .excellence-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .offices-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ascii-art {
+                font-size: 10px;
+            }
+
+            .team-values {
+                gap: 15px;
+                justify-content: center;
+            }
+            
+            .value-item {
+                font-size: 18px;
+                padding: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Pricing Block Logo">
+                <span>PRICING BLOCK</span>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#excellence">Excellence</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#track-record">Track Record</a></li>
+                    <li><a href="#expanding">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>The Compound Hacker</h1>
+            <div class="hero-content">
+                <p>Cover all trading cycles from 1 mili-second to 1 year</p>
+                <p>Profitable in each major asset : US stocks, A Shares, Bond, futures, Cryptos</p>
+                <p>100 Billion transaction volume validated since 2010</p>
+                <p>Compound Hacker generates long term compound returns: 600% in 6 years</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="excellence">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-trophy section-icon"></i>Excellence = Skill * Breadth * Implementation</h2>
+            <div class="excellence-grid">
+                <div class="excellence-item">
+                    <h3>Algorithmic Depth</h3>
+                    <p>10 Millions of lines of code cultivates deep algorithmic knowledge</p>
+                </div>
+                <div class="excellence-item">
+                    <h3>Core Procedures</h3>
+                    <p><strong>28 core procedures</strong>, ensuring <strong>end-to-end model deployment</strong> from conception to production</p>
+                </div>
+                <div class="excellence-item">
+                    <h3>Speed Advantage</h3>
+                    <p>Nanosecond event driven. Speed is your weapon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-people-group section-icon"></i>Team</h2>
+            <div class="team-content">
+                <p>Wall Street and Silicon Valley dual-gene</p>
+                <p>15 years of global investment experience</p>
+                <p>Flat hierarchy where the best ideas win</p>
+                <p>Regular hackathons and innovative learning</p>
+                
+                <div class="team-values">
+                    <span class="value-item">Diversity</span>
+                    <span class="value-item">Passionate</span>
+                    <span class="value-item">With taste</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-eye section-icon"></i>Vision</h2>
+            <div class="vision-content">
+                <h3>From global 20 offices, achieve 20% absolute return, for 20 years</h3>
+                <div class="offices-grid">
+                    <div class="office-item">Beijing</div>
+                    <div class="office-item">Shanghai</div>
+                    <div class="office-item">Hong Kong</div>
+                    <div class="office-item">Singapore</div>
+                    <div class="office-item">Tokyo</div>
+                    <div class="office-item">New York</div>
+                    <div class="office-item">Palo Alto</div>
+                    <div class="office-item">London</div>
+                    <div class="office-item">Frankfurt</div>
+                    <div class="office-item">Sydney</div>
+                    <div class="office-item">Dubai</div>
+                    <div class="office-item">Mumbai</div>
+                    <div class="office-item">Ho Chi Ming</div>
+                    <div class="office-item">Rwanda</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="track-record">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-arrow-trend-up section-icon"></i>Track Record</h2>
+            
+            <h3 style="text-align: center;">6 times in 6 years with multi assets， profitable in all assets</h3>
+            <img src="./images/pnl.all.png" alt="PNL Chart" id="track-record-pnlimg">
+            
+            <h3 style="text-align: center;">Deliever value in 4 trading cycles</h3>
+            <table id="track-record-table">
+                <thead>
+                    <tr>
+                        <th>Asset Class</th>
+                        <th>Total Rtn</th>
+                        <th>High-freq</th>
+                        <th>Short-term</th>
+                        <th>Mid-term</th>
+                        <th>Long-term</th>
+                        <th>Sharpe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A-shares</td>
+                        <td>82.69%</td>
+                        <td>-</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>0.93</td>
+                    </tr>
+                    <tr>
+                        <td>Futures</td>
+                        <td>316%</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.01</td>
+                    </tr>
+                    <tr>
+                        <td>US Stocks</td>
+                        <td>59.15%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>0.66</td>
+                    </tr>
+                    <tr>
+                        <td>Crypto</td>
+                        <td>1959%</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>0.97</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio</td>
+                        <td>602.27%</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>0.97</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="expanding" class="expanding-section">
+        <div class="expanding-container">
+            <div class="expanding-text">
+                <h2>We're Expanding</h2>
+                <p>Join our team of exceptional talents in global financial markets. We empower professionals in Mathematics, Physics, and Computer Science to seek scientific boundaries and apply cutting-edge research.</p>
+                
+                <ul class="roles-list">
+                    <li>Quantitative Scientist</li>
+                    <li>Mathematical/AI Modeling</li>
+                    <li>Low-Latency data Systems</li>
+                    <li>DevOps and Infrastructure</li>
+                </ul>
+
+
+                
+                <a href="#contact" class="contact-email">
+                    <i class="fa-solid fa-envelope"></i>
+                    &nbsp;
+                    hr@pricingblock.com
+                </a>
+
+                <div>
+                    Base: Beijing (full-time)
+                </div>
+            </div>
+            
+            <div class="expanding-image">
+                <img src="./images/join us-01.png" alt="Join Our Team">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pricing Block. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.getElementById('main-nav').classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
