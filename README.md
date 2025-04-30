@@ -1,6 +1,6 @@
 # 😸 "The Compound Hacker"
 - Cover all trading cycles from 1 mili-second year to 1 year
-- Profitable in each major asset : US stocks, A share stocks, Global futures, Cryptos and etc
+- Profitable in each major asset : US stocks, A Shares, Bond, futures, Cryptos
 - 100 Billion transaction volume validated since 2010
 - Compound Hacker generates long term compound returns: 600% in 6 years
 
@@ -58,10 +58,10 @@ We're always looking for exceptional talent in:
 
 ```text
      .                        /\_/\       __
-     .  °　    　　•　　  _____( >O< ) <  "I'M IN!!! HACK MODE!!! WOOHOO!!!"
-     .  　★   　*   ====(x         <    /____\
-     ★　   *      °    |          |==(:)  o  |
+     .  °　    　　•　　  _____( >O< ) <  "I'M IN!!! HACK MODE!!! 
+     .  　★   　*   ====(x         <     /____ \
+     ★　   *      °     |          |==(:)  o   |
      . .　　✯　•　°    .  \_________/    | BEER |
-     ☆    .   ☄   .       VV     V      \_/-\_/
+     ☆    .   ☄   .       VV     V      \__--_/
      .
 ```
