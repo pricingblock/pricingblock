@@ -7,7 +7,7 @@
 # 🌱 Excellence  = Skill * Breadth * Implementation
 
 - 10 Millions of lines of code cultivates deep algorithmic knowledge
-- **28 core procedures**, ensuring **end-to-end model deployment** from conception to production
+- **28 core stages**, ensuring model deployment from conception to production
 - Nanosecond event driven.  Speed is your weapon. 
 
 
