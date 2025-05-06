@@ -4,9 +4,6 @@
 - 100 Billion; transaction volume validated since 2010
 - 600% in 6 years; Compound Hacker generates compound returns: 
 
-# Mission
-- Through open source, make the fiancial market reach "Weak Form Market Efficiency"
-
 # Propriatary System
 - **10 Millions** of lines of code cultivates deep algorithmic knowledge
 - **28 core modules**, ensuring model deployment from conception to production
@@ -27,6 +24,9 @@
     - Flat hierarchy where the best ideas win everyone's support
 (Join Us: link to the hiring page)
 
+
+# Mission
+- Through open source, make the fiancial market reach "Weak Form Market Efficiency"
 
 
 # Vision
