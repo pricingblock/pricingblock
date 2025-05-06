@@ -17,7 +17,7 @@
 - Innovative Gene: 
     - Academics from Standford, Cambridge with 15 years of global investment experience
 - Diversity: 
-    - Scientists and philosophers from Biology, Computing, Drama, Oil drilling and military defense 
+    - Scientists and philosophers bring refined taste from Biology, Computing, Drama, Oil drilling and military defense 
 - Learning: 
     - Regular hackathons and innovative learning 
 - Collabration: 
