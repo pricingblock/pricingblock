@@ -1,7 +1,7 @@
 # "The Compound Hacker"
-- 0.000001 second to 1 year ; covers all trading cycles
+- 0.000001 second to 1 year; covers all trading cycles
 - 6 major asset : each of them profitable -  US stocks, A Shares, Bond, futures, Cryptos, options
-- 100 Billion transaction volume validated since 2010
+- 100 Billion; transaction volume validated since 2010
 - 600% in 6 years; Compound Hacker generates compound returns: 
 
 # Mission
