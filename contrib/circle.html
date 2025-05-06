@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compound Growth Visualization</title>
+<style>
+body {
+  background-color: #282c34; /* Deep blue background */
+  overflow: hidden; /* Hide scrollbars */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+canvas {
+  background-color: #282c34; /* Deep blue background */
+}
+
+.binary-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 128, 255, 0.1); /* Subtle blue binary text */
+  font-family: monospace;
+  font-size: 12px;
+  overflow: hidden;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+</style>
+</head>
+<body>
+<canvas id="growthCanvas"></canvas>
+<div class="binary-overlay"></div>
+
+<script>
+const canvas = document.getElementById('growthCanvas');
+const ctx = canvas.getContext('2d');
+const binaryOverlay = document.querySelector('.binary-overlay');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let startTime = null;
+
+function animate(timestamp) {
+  if (!startTime) startTime = timestamp;
+  const progress = (timestamp - startTime) / 2000; // Adjust speed here
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const baseRadius = 50;
+  const maxRadius = Math.min(canvas.width, canvas.height) / 2 * 0.8;
+
+  const radius = baseRadius + (maxRadius - baseRadius) * Math.pow(progress, 3); // Exponential growth
+
+  ctx.strokeStyle = `hsl(${progress * 180}, 100%, 50%)`; // Color shift
+  ctx.lineWidth = 2;
+
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+  ctx.stroke();
+
+  // Binary overlay effect
+  binaryOverlay.innerHTML = '01010101 '.repeat(canvas.width / 10);
+
+  if (progress < 1) {
+    requestAnimationFrame(animate);
+  }
+}
+
+requestAnimationFrame(animate);
+
+// Resize handling
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  startTime = null; // Restart animation on resize
+  requestAnimationFrame(animate);
+});
+</script>
+
+</body>
+</html>
